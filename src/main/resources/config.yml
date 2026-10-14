@@ -1,0 +1,41 @@
+# Configuration de VelaSpawn
+# Les messages utilisent le format MiniMessage : https://docs.advntr.dev/minimessage/format.html
+
+# Délai (secondes) avant la téléportation avec /spawn. 0 = instantané.
+delay-seconds: 3
+
+# Temps d'attente (secondes) entre deux /spawn. 0 = aucun cooldown.
+cooldown-seconds: 10
+
+# Annuler la téléportation si le joueur bouge / subit des dégâts pendant le délai.
+cancel-on-move: true
+cancel-on-damage: true
+
+# Téléporter les nouveaux joueurs au spawn à leur première connexion.
+teleport-on-first-join: true
+
+# Téléporter les joueurs au spawn à CHAQUE connexion.
+teleport-on-join: false
+
+# Faire réapparaître les joueurs au spawn après leur mort.
+respawn-at-spawn: true
+
+# Si true, un joueur qui a un lit / ancre de réapparition réapparaît là-bas au lieu du spawn.
+respawn-keep-bed: true
+
+# Messages (laisser vide pour désactiver un message).
+messages:
+  prefix: "<gray>[<green>Spawn</green>]</gray> "
+  teleported: "<green>Vous avez été téléporté au spawn."
+  teleported-other: "<green>{player} a été téléporté au spawn."
+  teleporting-in: "<yellow>Téléportation dans <white>{seconds}</white> seconde(s)... Ne bougez pas !"
+  cancelled-move: "<red>Téléportation annulée : vous avez bougé."
+  cancelled-damage: "<red>Téléportation annulée : vous avez subi des dégâts."
+  already-pending: "<red>Une téléportation est déjà en cours."
+  cooldown: "<red>Veuillez patienter <white>{seconds}</white> seconde(s) avant de réutiliser /spawn."
+  spawn-set: "<green>Le spawn a été défini à votre position."
+  save-error: "<red>Erreur lors de l'enregistrement du spawn (voir la console)."
+  reloaded: "<green>Configuration rechargée."
+  player-only: "<red>Cette commande doit être utilisée en jeu."
+  player-not-found: "<red>Joueur introuvable : {player}"
+  no-permission: "<red>Vous n'avez pas la permission."

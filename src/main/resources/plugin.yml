@@ -1,0 +1,39 @@
+name: VelaSpawn
+version: '${version}'
+main: fr.velaspawn.VelaSpawn
+api-version: '26.2'
+description: Plugin de spawn simple (/spawn, /setspawn)
+
+commands:
+  spawn:
+    description: Se téléporter au spawn
+    usage: /spawn [joueur]
+    permission: spawnplugin.spawn
+  setspawn:
+    description: Définir le spawn à votre position
+    usage: /setspawn
+    permission: spawnplugin.setspawn
+  spawnreload:
+    description: Recharger la configuration
+    usage: /spawnreload
+    permission: spawnplugin.reload
+
+permissions:
+  spawnplugin.spawn:
+    description: Utiliser /spawn
+    default: true
+  spawnplugin.spawn.others:
+    description: Envoyer un autre joueur au spawn
+    default: op
+  spawnplugin.setspawn:
+    description: Utiliser /setspawn
+    default: op
+  spawnplugin.reload:
+    description: Utiliser /spawnreload
+    default: op
+  spawnplugin.bypass.delay:
+    description: Ignorer le délai de téléportation
+    default: op
+  spawnplugin.bypass.cooldown:
+    description: Ignorer le cooldown
+    default: op
